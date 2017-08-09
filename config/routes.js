@@ -7,6 +7,9 @@ module.exports = function($){
 *		https://expressjs.com/en/guide/routing.html#express-router
 *  ---------------------------------------------------------------------
 */
+	$.get('/', function(req, res){
+		return res.json({msg:"Success"})
+	})
 	$.post('/upload-image',function(req, res){
 		if (!req.files){
 		    res.status(400)
