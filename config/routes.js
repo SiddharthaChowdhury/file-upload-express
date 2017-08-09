@@ -21,6 +21,7 @@ module.exports = function($){
 		var extension = file.name.split('.').pop();
 	    filename = filename+'.'+extension;
 
+	    console.log(file)
 	    var path = _root;
 		path += '/uploads/images';
 		var correctPath = _path.normalize(path);
